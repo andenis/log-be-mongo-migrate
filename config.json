@@ -1,0 +1,19 @@
+{
+  "postgres": {
+    "url": "postgresql+psycopg2://postgres:Mbbc.7742@localhost:5432/log-we-be"
+  },
+  "migrations": [
+    {
+      "enabled": true,
+      "file": "hub_prod.entityShipper.json",
+      "table": "shippers",
+      "map_func": "map_shippers"
+    },
+    {
+      "enabled": false,
+      "file": "hub_prod.carrier.json",
+      "table": "carriers",
+      "map_func": "map_carriers"
+    }
+  ]
+}
